@@ -1,0 +1,92 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background: var(--tip-bg);
+  min-height: 100vh;
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  color: var(--text);
+}
+
+.dashboard-card {
+  background: var(--card-bg);
+  padding: 30px 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background: var(--progress-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 10px;
+  height: 25px;
+}
+
+.progress {
+  height: 100%;
+  text-align: center;
+  line-height: 25px;
+  color: var(--background);
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+/* Expenses List */
+.expenses-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--expense-bg);
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+.expense-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.receipt {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--tip-accent);
+  color: var(--background);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #FF3B3B;
+  transform: translateY(-2px);
+}

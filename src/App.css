@@ -1,0 +1,111 @@
+:root {
+  --background: #ffffff;
+  --text: #2d2d2d;
+  --primary: #2e7d32;      
+  --secondary: #4caf50;    
+  --accent: #a5d6a7;       
+  --success: #1b5e20;      
+  --light-bg: #f4f7f9;
+  --tip-bg: #E0F7FA;       
+  --tip-accent: #4caf50;   
+  --card-bg: #FFF8E7;      
+  --expense-bg: #E8F5E9;   
+  --progress-bg: #a5d6a7;  
+}
+
+/* Body & root container */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--light-bg);
+  color: var(--text);
+}
+
+/* Full-width dashboard container */
+.dashboard-container,
+.auth-container,
+.ai-tips-container {
+  width: 100%;          /* span full horizontal width */
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* stretch children full width */
+  gap: 2rem;
+}
+
+/* Cards full-width */
+.dashboard-card,
+.card,
+.auth-card,
+.ai-tips-container {
+  width: 100%;          /* span left to right */
+  margin: 0;            /* remove auto margins */
+  padding: 2rem;
+  border-radius: 0;     /* optional: square edges for full-width aesthetic */
+  background: var(--card-bg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 25px;
+  background: var(--progress-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  text-align: center;
+  line-height: 25px;
+  color: var(--background);
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+/* Expenses list full width */
+.expenses-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--expense-bg);
+  padding: 10px 15px;
+  border-radius: 0; /* full-width look */
+}
+
+/* AI Tips */
+.ai-tips-container h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.ai-tip {
+  background: var(--tip-bg);
+  padding: 10px 15px;
+  border-left: 5px solid var(--tip-accent);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.auth-card input,
+.auth-card button {
+  width: 100%;  /* full width inputs & buttons */
+  margin-bottom: 15px;
+}

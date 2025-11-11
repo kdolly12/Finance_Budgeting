@@ -1,0 +1,47 @@
+:root {
+  --background: #ffffff;
+  --text: #2d2d2d;
+  --primary: #2e7d32;
+  --secondary: #4caf50;
+  --accent: #a5d6a7;
+  --success: #1b5e20;
+  --danger: #c62828;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 2rem;
+  background: var(--accent);
+  min-height: 100vh;
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  color: var(--text);
+}
+
+.ai-tips-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.ai-tip {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.toggle-btn {
+  align-self: flex-end;
+  background: var(--primary);
+  color: var(--background);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: var(--secondary);
+}

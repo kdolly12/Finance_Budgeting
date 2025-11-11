@@ -1,0 +1,42 @@
+:root {
+  --background: #ffffff;
+  --text: #2d2d2d;
+  --primary: #2e7d32;
+  --secondary: #4caf50;
+  --accent: #a5d6a7;
+  --success: #1b5e20;
+  --danger: #c62828;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"], input[type="number"], input[type="file"] {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: var(--primary);
+}
+
+button[type="submit"] {
+  background: var(--primary);
+  color: var(--background);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: var(--secondary);
+}
